@@ -18,25 +18,25 @@ export function Services() {
   // Array de dados dos serviços
   const services: Service[] = [
     {
-      icon: <Brain className="w-8 h-8" />,
+      icon: <Brain className="w-12 h-12" />,
       title: 'Avaliação Neuropsicológica',
       description: 'Investigação das funções cognitivas através de testes padronizados para identificar áreas preservadas e comprometidas.',
       topics: ['Ansiedade', 'Depressão', 'Fobias', 'TOC'],
     },
     {
-      icon: <Heart className="w-8 h-8" />,
+      icon: <Heart className="w-12 h-12" />,
       title: 'Terapia Individual',
       description: 'Atendimento personalizado para questões emocionais e desenvolvimento pessoal.',
       topics: ['Autoestima', 'Relacionamentos', 'Luto', 'Traumas'],
     },
     {
-      icon: <User className="w-8 h-8" />,
+      icon: <User className="w-12 h-12" />,
       title: 'Orientação Profissional',
       description: 'Suporte para questões relacionadas à carreira e ambiente de trabalho.',
       topics: ['Burnout', 'Transição de carreira', 'Estresse', 'Conflitos'],
     },
     {
-      icon: <Clock className="w-8 h-8" />,
+      icon: <Clock className="w-12 h-12" />,
       title: 'Sessões Online',
       description: 'Atendimento por videochamada com a mesma qualidade do presencial.',
       topics: ['Flexibilidade', 'Conforto', 'Acessibilidade', 'Segurança'],
@@ -44,10 +44,10 @@ export function Services() {
   ];
 
   return (
-    <section id="servicos" className="py-20 bg-gray-50">
+    <section id="servicos" className="py-20 ultrawide:py-40 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl ultrawide:text-6xl text-gray-900 mb-4">
             Serviços Oferecidos
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -55,7 +55,7 @@ export function Services() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 ultrawide:gap-12 ultrawide:p-16">
           {services.map((service, index) => (
             <div
               key={index}
@@ -64,8 +64,8 @@ export function Services() {
               <div className="w-16 h-16 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 mb-4">
                 {service.icon}
               </div>
-              <h3 className="text-xl text-gray-900 mb-3">{service.title}</h3>
-              <p className="text-gray-600 mb-4">{service.description}</p>
+              <h3 className="text-xl ultrawide:text-2xl text-gray-900 mb-4">{service.title}</h3>
+              <p className="text-gray-600 ultrawide:text-lg mb-4">{service.description}</p>
               <div className="flex flex-wrap gap-2">
                 {service.topics.map((topic, topicIndex) => (
                   <span

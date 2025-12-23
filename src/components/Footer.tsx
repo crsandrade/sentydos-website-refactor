@@ -135,14 +135,7 @@ export function Footer() {
             <p className="text-gray-400 text-sm">
               © {currentYear} Valmiro Filho, todos os direitos reservados. Desenvolvido por Rafael Andrade.
             </p>
-            <div className="flex gap-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-teal-400 transition-colors">
-                Política de Privacidade
-              </a>
-              <a href="#" className="text-gray-400 hover:text-teal-400 transition-colors">
-                Termos de Uso
-              </a>
-            </div>
+           
           </div>
         </div>
       </div>

@@ -71,13 +71,13 @@ export function Contact() {
   ];
 
   return (
-    <section id="contato" className="py-20 bg-gray-50">
+    <section id="contato" className="py-20 ultrawide:py-32 bg-gray-50 ultrawide:mb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl text-gray-900 mb-4">
+        <div className="text-center mb-16 ultrawide:mb-32">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl ultrawide:text-6xl text-gray-900 mb-4 ultrawide:mb-6">
             Entre em Contato
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto ultrawide:text-xl">
             Estou aqui para ajudar. Agende sua consulta ou tire suas dúvidas
           </p>
         </div>

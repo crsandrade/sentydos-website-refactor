@@ -39,10 +39,10 @@ export function Testimonials() {
   ];
 
   return (
-    <section id="depoimentos" className="py-20 bg-white">
+    <section id="depoimentos" className="py-20 ultrawide:py-32 bg-white ultrawide:mb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl ultrawide:text-6xl text-gray-900 mb-4">
             O que dizem meus pacientes
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -50,16 +50,16 @@ export function Testimonials() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 ultrawide:p-6">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-gradient-to-br from-teal-50 to-blue-50 rounded-xl p-8 relative"
+              className="bg-linear-to-br from-teal-50 to-blue-50 rounded-xl p-8 relative"
             >
               <div className="absolute top-6 right-6 text-teal-200">
                 <Quote className="w-12 h-12" />
               </div>
-              <div className="flex gap-1 mb-4">
+              <div className="flex gap-1 mb-8">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <svg
                     key={i}
@@ -70,10 +70,10 @@ export function Testimonials() {
                   </svg>
                 ))}
               </div>
-              <p className="text-gray-700 mb-6 italic">{testimonial.content}</p>
+              <p className="text-gray-700 ultrawide:text-lg mb-6 italic">{testimonial.content}</p>
               <div>
-                <p className="text-gray-900">{testimonial.name}</p>
-                <p className="text-gray-500 text-sm">{testimonial.role}</p>
+                <p className="text-gray-900 ultrawide:text-lg">{testimonial.name}</p>
+                <p className="text-gray-500 text-sm ultrawide:text-sm">{testimonial.role}</p>
               </div>
             </div>
           ))}
