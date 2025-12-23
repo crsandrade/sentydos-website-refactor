@@ -3,7 +3,13 @@
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 
+/**
+ * Componente da seção de Contato.
+ * Exibe informações de contato (telefone, email, endereço) e um formulário de contato.
+ * Gerencia o estado do formulário e envio simulado.
+ */
 export function Contact() {
+  // Estado do formulário para inputs controlados
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -11,13 +17,22 @@ export function Contact() {
     message: '',
   });
 
+  /**
+   * Lida com o envio do formulário.
+   * Atualmente implementa um alerta simulado e redefinição do formulário.
+   * @param e - Evento de envio do formulário
+   */
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Mock form submission
+    // Envio simulado do formulário
     alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
     setFormData({ name: '', email: '', phone: '', message: '' });
   };
 
+  /**
+   * Atualiza o estado do formulário na alteração do input.
+   * @param e - Evento de alteração do input
+   */
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -27,6 +42,7 @@ export function Contact() {
     });
   };
 
+  // Dados das informações de contato
   const contactInfo = [
     {
       icon: <Phone className="w-6 h-6" />,

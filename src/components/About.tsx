@@ -1,7 +1,13 @@
 import { Check } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
+/**
+ * Componente da seção Sobre (About).
+ * Exibe informações sobre o profissional/clínica, incluindo histórico e qualificações.
+ * Utiliza um layout de duas colunas com texto de um lado e imagem do outro.
+ */
 export function About() {
+  // Lista de qualificações profissionais para exibir
   const qualifications = [
     'Especialista em Psicopatologia e Saúde Mental',
     'Especialista em Avaliação Psicológica',

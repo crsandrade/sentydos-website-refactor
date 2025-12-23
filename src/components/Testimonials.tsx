@@ -7,7 +7,13 @@ interface Testimonial {
   rating: number;
 }
 
+/**
+ * Componente da seção de Depoimentos.
+ * Exibe avaliações de pacientes/clientes para construir prova social.
+ * Renderiza uma grade de cartões de depoimento com classificações por estrelas.
+ */
 export function Testimonials() {
+  // Array de dados dos depoimentos
   const testimonials: Testimonial[] = [
     {
       name: 'Priscila',

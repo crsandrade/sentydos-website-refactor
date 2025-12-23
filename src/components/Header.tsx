@@ -3,9 +3,18 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
+/**
+ * Componente de Cabeçalho (Header) contendo a barra de navegação.
+ * Gerencia a navegação responsiva com um alternador de menu móvel.
+ * Inclui funcionalidade de rolagem suave para as seções da página.
+ */
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  /**
+   * Rola suavemente para uma seção específica pelo ID e fecha o menu móvel.
+   * @param id - O ID HTML da seção para a qual rolar
+   */
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {

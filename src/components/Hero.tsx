@@ -2,7 +2,16 @@
 
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
+/**
+ * Componente da seção Hero.
+ * Exibe a proposta de valor principal, botões de chamada para ação (CTA) e uma imagem em destaque.
+ * Esta é a primeira seção que os usuários veem ao acessar a página.
+ */
 export function Hero() {
+  /**
+   * Rola suavemente para uma seção específica pelo ID.
+   * @param id - O ID HTML da seção para a qual rolar
+   */
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -25,16 +34,16 @@ export function Hero() {
               oferecendo um espaço seguro e acolhedor para o seu bem-estar emocional.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-               <a
-              href="https://wa.me/5571988911911?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button
-                className="bg-teal-600 text-white px-8 py-3 rounded-full hover:bg-teal-700 transition-colors"
+              <a
+                href="https://wa.me/5571988911911?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Agendar Consulta
-              </button>
+                <button
+                  className="bg-teal-600 text-white px-8 py-3 rounded-full hover:bg-teal-700 transition-colors"
+                >
+                  Agendar Consulta
+                </button>
               </a>
               <button
                 onClick={() => scrollToSection('sobre')}

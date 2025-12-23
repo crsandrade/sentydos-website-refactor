@@ -2,6 +2,11 @@
 
 import { Mail, Phone, MapPin, Instagram, Linkedin, Facebook } from 'lucide-react';
 
+/**
+ * Componente de Rodapé (Footer).
+ * Exibe informações de direitos autorais, links sociais, links de navegação rápida e detalhes de contato.
+ * Aparece na parte inferior de todas as páginas.
+ */
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -10,6 +15,10 @@ export function Footer() {
     { icon: <Linkedin className="w-5 h-5" />, href: 'https://www.linkedin.com/in/valmiro-do-esp%C3%ADrito-santo-filho-40048244/', label: 'LinkedIn' },
   ];
 
+  /**
+   * Rola suavemente para uma seção específica pelo ID.
+   * @param id - O ID HTML da seção para a qual rolar
+   */
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {

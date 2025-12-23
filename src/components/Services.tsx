@@ -9,7 +9,13 @@ interface Service {
   topics: string[];
 }
 
+/**
+ * Componente da seção de Serviços.
+ * Exibe uma grade de serviços oferecidos pelo profissional.
+ * Cada cartão de serviço inclui um ícone, título, descrição e tópicos relacionados.
+ */
 export function Services() {
+  // Array de dados dos serviços
   const services: Service[] = [
     {
       icon: <Brain className="w-8 h-8" />,
