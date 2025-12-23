@@ -1,3 +1,5 @@
+'use client';
+
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function Hero() {
@@ -19,7 +21,7 @@ export function Hero() {
               empatia e profissionalismo
             </h1>
             <p className="text-lg text-gray-600 mb-8">
-              Psicóloga clínica especializada em terapia cognitivo-comportamental,
+              Psicólogo clínico especializado em avaliação Neuropsicológica,
               oferecendo um espaço seguro e acolhedor para o seu bem-estar emocional.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -46,7 +48,7 @@ export function Hero() {
               />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg hidden md:block">
-              <p className="text-teal-600 mb-1">+500</p>
+              <p className="text-teal-600 mb-1">+100</p>
               <p className="text-gray-600 text-sm">Pacientes atendidos</p>
             </div>
           </div>

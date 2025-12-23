@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -17,7 +19,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <h1 className="text-xl text-teal-700">Dra. Ana Silva</h1>
+            <h1 className="text-xl text-teal-700">Psicólogo Valmiro Filho</h1>
           </div>
 
           {/* Desktop Navigation */}

@@ -1,3 +1,5 @@
+'use client';
+
 import { Brain, Heart, User, Clock } from 'lucide-react';
 
 interface Service {
