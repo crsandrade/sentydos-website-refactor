@@ -37,8 +37,8 @@ export function Footer() {
               Psicólogo Clínico - CRP 03/9433
             </p>
             <p className="text-gray-400 mb-4">
-              Cuidando da sua saúde mental com empatia, profissionalismo e
-              dedicação. Atendimento presencial e online.
+              "Não se acha a paz evitando a vida." <br></br>
+              Virginia Woolf
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social, index) => (

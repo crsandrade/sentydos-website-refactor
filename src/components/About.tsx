@@ -49,7 +49,7 @@ export function About() {
           <div className="order-1 md:order-2">
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <ImageWithFallback
-                src="https://slategray-alligator-930004.hostingersite.com/public/assets/images/valmiro-filho.png"
+                src="sentydos-logo.png"
                 alt="Profissional de psicologia"
                 className="w-full h-auto object-cover"
               />

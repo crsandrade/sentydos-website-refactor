@@ -56,7 +56,7 @@ export function Hero() {
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1700168333952-3d44a3f427af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwc3ljaG9sb2dpc3QlMjBvZmZpY2UlMjBjYWxtfGVufDF8fHx8MTc2NjQ4ODcwM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src="valmiro-filho-image.png"
                 alt="Consultório de psicologia acolhedor"
                 className="w-full h-full object-cover"
               />
