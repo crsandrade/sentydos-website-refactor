@@ -10,24 +10,24 @@ interface Testimonial {
 export function Testimonials() {
   const testimonials: Testimonial[] = [
     {
-      name: 'Maria Santos',
-      role: 'Paciente desde 2022',
+      name: 'Priscila',
+      role: 'Paciente desde 2018',
       content:
-        'A Dra. Ana transformou minha vida. Sua abordagem empática e profissional me ajudou a superar a ansiedade que me afetava há anos. Sou extremamente grata!',
+        'Estou há mais de 5 anos com Valmiro e tenho tido avanços inimagináveis, cada ano me renovo e me torno uma pessoa melhor. Foi com ele que tratei minha depressão aguda e agora o tdah encontrando novas formas de lidar comigo e estratégias para evoluir além de vasculhando bem passado poder fazer as pazes com meus fantasmas e lidar c meus traumas de infância. Valmiro além de um profissional de excelência é muito humano e empático.ama seu trabalho e o faz de maneira incrivel.',
       rating: 5,
     },
     {
-      name: 'João Oliveira',
-      role: 'Paciente desde 2021',
+      name: 'Gabriela',
+      role: 'Paciente desde 2019',
       content:
-        'Excelente profissional! As sessões online são muito convenientes e a qualidade do atendimento é impecável. Recomendo muito!',
+        'Cheguei ao consultório de Valmiro Filho, completamente desacreditada da vida, cheio de pensamentos terríveis e com vontade de tirar a minha própria vida. E ao longo do acompanhamento psicológico, acabei sendo diagnósticada com depressão, atrelada outras coisas, mas aos poucos fui melhorando e evoluindo. Hoje me sinto bem melhor e já não tenho vontade de morrer, pelol contrário, venho transformando a minha vida em algo realmente bom. Agradeço imensamente ao Valmiro pela forma que vem conduzindo o meu tratamento.',
       rating: 5,
     },
     {
-      name: 'Carla Mendes',
-      role: 'Paciente desde 2023',
+      name: 'Jaqueline',
+      role: 'Paciente desde 2017',
       content:
-        'Encontrei na Dra. Ana o suporte que precisava para atravessar um momento difícil. Seu profissionalismo e humanidade fazem toda a diferença.',
+        'Estava passando por um processo muito difícil, tive depressão maior, que desestruturou minha vida como um todo. O atendimento com o Valmiro me proporcionou uma nova visão do que estava vivenciando, e hoje estou bem melhor, estou refazendo e reequilibrando minha vida, hoje já consigo trabalhar novamente e fazer coisas que deixei de fazer por conta da depressão. Ele é um profissional excelente! Profissional competente, e pessoa bem receptiva, além do local do atendimento ser um ambiente bem aconchegante!',
       rating: 5,
     },
   ];

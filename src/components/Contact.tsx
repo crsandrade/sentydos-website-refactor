@@ -31,25 +31,25 @@ export function Contact() {
     {
       icon: <Phone className="w-6 h-6" />,
       title: 'Telefone',
-      content: '(11) 98765-4321',
-      link: 'tel:+5511987654321',
+      content: '(71) 98891-1911',
+      link: 'tel:+5571988911911',
     },
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
-      content: 'contato@draanasilva.com.br',
-      link: 'mailto:contato@draanasilva.com.br',
+      content: 'valmirofilho@sentydos.com.br',
+      link: 'mailto:valmirofilho@sentydos.com.br',
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: 'Endereço',
-      content: 'Av. Paulista, 1000 - São Paulo, SP',
-      link: 'https://maps.google.com',
+      content: 'Avenida Tancredo Neves, 969, Edf. Metropolitan Center - Sala: 304 - Caminho das Árvores., Salvador (Bahia)',
+      link: 'https://maps.app.goo.gl/ChhhCxDruiRWTRNQ9',
     },
     {
       icon: <Clock className="w-6 h-6" />,
       title: 'Horário de Atendimento',
-      content: 'Seg-Sex: 8h-20h | Sáb: 8h-14h',
+      content: 'Seg-Sex: 8h-20h | Sáb: 8h-12h',
       link: null,
     },
   ];
@@ -73,7 +73,7 @@ export function Contact() {
             <div className="space-y-6">
               {contactInfo.map((info, index) => (
                 <div key={index} className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600">
+                  <div className="shrink-0 w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600">
                     {info.icon}
                   </div>
                   <div>

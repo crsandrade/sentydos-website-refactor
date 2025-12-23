@@ -57,12 +57,17 @@ export function Header() {
           </nav>
 
           <div className="hidden md:block">
+            <a
+              href="https://wa.me/5571988911911?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
             <button
-              onClick={() => scrollToSection('contato')}
               className="bg-teal-600 text-white px-6 py-2 rounded-full hover:bg-teal-700 transition-colors"
             >
               Agendar Consulta
             </button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}

@@ -25,12 +25,17 @@ export function Hero() {
               oferecendo um espaço seguro e acolhedor para o seu bem-estar emocional.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
+               <a
+              href="https://wa.me/5571988911911?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button
-                onClick={() => scrollToSection('contato')}
                 className="bg-teal-600 text-white px-8 py-3 rounded-full hover:bg-teal-700 transition-colors"
               >
                 Agendar Consulta
               </button>
+              </a>
               <button
                 onClick={() => scrollToSection('sobre')}
                 className="border-2 border-teal-600 text-teal-600 px-8 py-3 rounded-full hover:bg-teal-50 transition-colors"

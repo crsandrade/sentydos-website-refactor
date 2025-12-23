@@ -13,8 +13,8 @@ export function Services() {
   const services: Service[] = [
     {
       icon: <Brain className="w-8 h-8" />,
-      title: 'Terapia Cognitivo-Comportamental',
-      description: 'Abordagem focada em identificar e modificar padrões de pensamento e comportamento.',
+      title: 'Avaliação Neuropsicológica',
+      description: 'Investigação das funções cognitivas através de testes padronizados para identificar áreas preservadas e comprometidas.',
       topics: ['Ansiedade', 'Depressão', 'Fobias', 'TOC'],
     },
     {
@@ -74,7 +74,7 @@ export function Services() {
           ))}
         </div>
 
-        <div className="mt-16 bg-teal-600 rounded-2xl p-8 md:p-12 text-center text-white">
+        <div className="mt-16 bg-teal-600 rounded-2xl p-8 md:p-12 text-center text-white hidden">
           <h3 className="text-2xl md:text-3xl mb-4">
             Primeira Consulta com Desconto
           </h3>
