@@ -39,7 +39,7 @@ export function Testimonials() {
   ];
 
   return (
-    <section id="depoimentos" className="py-20 ultrawide:py-32 bg-white ultrawide:mb-12">
+    <section id="depoimentos" className="py-20 ultrawide:py-36 bg-white ultrawide:mb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl ultrawide:text-6xl text-gray-900 mb-4">

@@ -18,7 +18,7 @@ export function About() {
   ];
 
   return (
-    <section id="sobre" className="py-20 ultrawide:py-32 bg-white ultrawide:mb-26">
+    <section id="sobre" className="py-20 ultrawide:py-36 bg-white ultrawide:mb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="order-2 md:order-1">
