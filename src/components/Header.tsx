@@ -24,45 +24,20 @@ export function Header() {
   };
 
   return (
-    <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+    <header className="fixed top-0 w-full h-20 bg-white/95 backdrop-blur-sm shadow-sm z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <h1 className="text-xl text-teal-700">Psicólogo Valmiro Filho</h1>
+            <span className="text-xl text-teal-700">Psicólogo Valmiro Filho</span>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            <button
-              onClick={() => scrollToSection('inicio')}
-              className="text-gray-700 hover:text-teal-600 transition-colors"
-            >
-              Início
-            </button>
-            <button
-              onClick={() => scrollToSection('sobre')}
-              className="text-gray-700 hover:text-teal-600 transition-colors"
-            >
-              Sobre
-            </button>
-            <button
-              onClick={() => scrollToSection('servicos')}
-              className="text-gray-700 hover:text-teal-600 transition-colors"
-            >
-              Serviços
-            </button>
-            <button
-              onClick={() => scrollToSection('depoimentos')}
-              className="text-gray-700 hover:text-teal-600 transition-colors"
-            >
-              Depoimentos
-            </button>
-            <button
-              onClick={() => scrollToSection('contato')}
-              className="text-gray-700 hover:text-teal-600 transition-colors"
-            >
-              Contato
-            </button>
+          <nav className="hidden md:flex space-x-8 font-semibold">
+            <a href="#inicio" className="text-gray-700 hover:text-teal-600 transition-colors ">Início</a>
+            <a href="#sobre" className="text-gray-700 hover:text-teal-600 transition-colors">Sobre</a>
+            <a href="#servicos" className="text-gray-700 hover:text-teal-600 transition-colors">Serviços</a>
+            <a href="#depoimentos" className="text-gray-700 hover:text-teal-600 transition-colors">Depoimentos</a>
+            <a href="#contato" className="text-gray-700 hover:text-teal-600 transition-colors">Contato</a>
           </nav>
 
           <div className="hidden md:block">
@@ -71,11 +46,11 @@ export function Header() {
               target="_blank"
               rel="noopener noreferrer"
             >
-            <button
-              className="bg-teal-600 text-white px-6 py-2 rounded-full hover:bg-teal-700 transition-colors"
-            >
-              Agendar Consulta
-            </button>
+              <button
+                className="bg-teal-600 text-white px-6 py-2 rounded-full hover:bg-teal-700 transition-colors"
+              >
+                Agendar Consulta
+              </button>
             </a>
           </div>
 
@@ -94,43 +69,23 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden pb-4 space-y-4">
-            <button
-              onClick={() => scrollToSection('inicio')}
-              className="block w-full text-left text-gray-700 hover:text-teal-600 transition-colors"
+          <nav className="md:hidden pb-4 space-y-4 bg-white/95 backdrop-blur-sm shadow-sm flex flex-col items-center">
+            <a href="#inicio" onClick={() => setIsMenuOpen(false)} className="text-gray-700 hover:text-teal-600 transition-colors ">Início</a>
+            <a href="#sobre" onClick={() => setIsMenuOpen(false)} className="text-gray-700 hover:text-teal-600 transition-colors">Sobre</a>
+            <a href="#servicos" onClick={() => setIsMenuOpen(false)} className="text-gray-700 hover:text-teal-600 transition-colors">Serviços</a>
+            <a href="#depoimentos" onClick={() => setIsMenuOpen(false)} className="text-gray-700 hover:text-teal-600 transition-colors">Depoimentos</a>
+            <a href="#contato" onClick={() => setIsMenuOpen(false)} className="text-gray-700 hover:text-teal-600 transition-colors">Contato</a>
+            <a
+              href="https://wa.me/5571988911911?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Início
-            </button>
-            <button
-              onClick={() => scrollToSection('sobre')}
-              className="block w-full text-left text-gray-700 hover:text-teal-600 transition-colors"
-            >
-              Sobre
-            </button>
-            <button
-              onClick={() => scrollToSection('servicos')}
-              className="block w-full text-left text-gray-700 hover:text-teal-600 transition-colors"
-            >
-              Serviços
-            </button>
-            <button
-              onClick={() => scrollToSection('depoimentos')}
-              className="block w-full text-left text-gray-700 hover:text-teal-600 transition-colors"
-            >
-              Depoimentos
-            </button>
-            <button
-              onClick={() => scrollToSection('contato')}
-              className="block w-full text-left text-gray-700 hover:text-teal-600 transition-colors"
-            >
-              Contato
-            </button>
-            <button
-              onClick={() => scrollToSection('contato')}
-              className="w-full bg-teal-600 text-white px-6 py-2 rounded-full hover:bg-teal-700 transition-colors"
-            >
-              Agendar Consulta
-            </button>
+              <button
+                className="w-full bg-teal-600 text-white px-6 py-2 rounded-full hover:bg-teal-700 transition-colors"
+              >
+                Agendar Consulta
+              </button>
+            </a>
           </nav>
         )}
       </div>

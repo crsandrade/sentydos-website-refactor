@@ -1,5 +1,3 @@
-'use client';
-
 import { Brain, Heart, User, Clock } from 'lucide-react';
 
 interface Service {
@@ -44,14 +42,14 @@ export function Services() {
   ];
 
   return (
-    <section id="servicos" className="py-20 ultrawide:py-36 bg-gray-50 ultrawide:mb-16">
+    <section id="servicos" className="py-6 lg:py-20 ultrawide:py-36 bg-gray-50 ultrawide:mb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl ultrawide:text-6xl text-gray-900 mb-4">
             Serviços Oferecidos
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Atendimento especializado com foco em suas necessidades individuais
+            Cada serviço é pensado para acolher você no momento que está vivendo
           </p>
         </div>
 
@@ -59,14 +57,14 @@ export function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow"
+              className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow flex flex-col h-full"
             >
               <div className="w-16 h-16 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 mb-4">
                 {service.icon}
               </div>
               <h3 className="text-xl ultrawide:text-2xl text-gray-900 mb-4">{service.title}</h3>
               <p className="text-gray-600 ultrawide:text-lg mb-4">{service.description}</p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 pt-2">
                 {service.topics.map((topic, topicIndex) => (
                   <span
                     key={topicIndex}
@@ -75,7 +73,13 @@ export function Services() {
                     {topic}
                   </span>
                 ))}
+                
               </div>
+              <div className="mt-auto self-center pt-4">
+                  <button className="bg-teal-600 text-white px-4 py-2 rounded-full text-sm hover:bg-teal-700 transition-colors self-start">
+                    Saiba mais
+                  </button>
+                </div>
             </div>
           ))}
         </div>

@@ -18,22 +18,21 @@ export function About() {
   ];
 
   return (
-    <section id="sobre" className="py-20 ultrawide:py-36 bg-white ultrawide:mb-16">
+    <section id="sobre" className="py-4 lg:py-20 ultrawide:py-36 bg-white ultrawide:mb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 lg:gap-16 gap-2 items-center">
           <div className="order-2 md:order-1">
             <h2 className="text-3xl md:text-4xl lg:text-5xl ultrawide:text-6xl text-gray-900 mb-6 ultrawide:mb-16">
-              Quem somos?
+              Psicólogo clínico especializado em avaliação psicológica
             </h2>
             <p className="text-gray-600 ultrawide:text-lg mb-6 ultrawide:mb-8">
-              Somos uma empresa que surgiu com o intuito de ser tornar referência no mercado em nossa área de atuação, com foco na valorização
-              do Desenvolvimento Humano, atuando nos segmentos de Psicoterapia, Avaliação Psicológica e Avaliação Neuropsicológica,
-              além de Recrutamento e Seleção, cursos e palestras relacionadas à área.
+              Sou psicólogo clínico, com atuação voltada para o cuidado da saúde mental a partir da escuta qualificada, da avaliação psicológica e da compreensão profunda de cada história.
+              Meu trabalho é ajudar pessoas a entenderem o que está por trás de seus sintomas emocionais, cognitivos e comportamentais, construindo, junto com cada paciente, um processo de cuidado ético, individualizado e responsável.
+
             </p>
             <p className="text-gray-600 ultrawide:text-lg mb-6 ultrawide:mb-8">
-              Dispomos de uma equipe qualificada e eficiente, comprometida em superar as expectativas dos nossos clientes.
-              Atuamos com seriedade, transparência e, sobretudo, respeito na relação com pessoas e/ou organizações.
-              Presentes desde 2017, prezamos sempre pela qualidade do atendimento, estando prontos para acolher e satisfazer necessidades em todos os âmbitos.
+              Faço atendimento presencial em Salvador, Bahia atuando nas áreas de psicoterapia, avaliação psicológica e avaliação neuropsicológica, com formação especializada e compromisso com práticas baseadas em conhecimento técnico e sensibilidade clínica.
+              O atendimento é realizado em um espaço seguro, de acolhimento e sigilo, respeitando a singularidade de cada pessoa e o tempo necessário para que o processo terapêutico aconteça.
             </p>
             <div className="space-y-4 pt-6 ultrawide:pt-16">
               {qualifications.map((qualification, index) => (
@@ -56,6 +55,14 @@ export function About() {
             </div>
           </div>
         </div>
+      </div>
+      <div className='flex justify-center pt-6 lg:pt-12'>
+        <button className=" w-xl bg-teal-600 text-white lg:px-6 lg:py-3 px-2 py-2 rounded-full text-base lg:text-lg ultrawide:text-base font-medium
+             hover:bg-teal-700 transition-colors group inline-flex items-center justify-center gap-2 ">
+          Conheça nossas áreas de atuação <span className="transition-transform duration-300 group-hover:translate-x-1">
+            →
+          </span>
+        </button>
       </div>
     </section>
   );

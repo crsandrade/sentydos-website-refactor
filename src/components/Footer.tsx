@@ -37,8 +37,9 @@ export function Footer() {
               Psicólogo Clínico - CRP 03/9433
             </p>
             <p className="text-gray-400 mb-4">
-              "Não se acha a paz evitando a vida." <br></br>
-              Virginia Woolf
+              “Não se trata de eliminar o sofrimento, mas de dar a ele um sentido.”
+              <br></br>
+              — Viktor Frankl
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social, index) => (
@@ -61,36 +62,16 @@ export function Footer() {
             <h4 className="mb-4">Links Rápidos</h4>
             <ul className="space-y-2">
               <li>
-                <button
-                  onClick={() => scrollToSection('inicio')}
-                  className="text-gray-400 hover:text-teal-400 transition-colors"
-                >
-                  Início
-                </button>
+            <a href="#inicio" className="text-gray-400 hover:text-teal-400 transition-colors ">Início</a>           
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection('sobre')}
-                  className="text-gray-400 hover:text-teal-400 transition-colors"
-                >
-                  Sobre
-                </button>
+  <a href="#sobre" className="text-gray-400 hover:text-teal-400 transition-colors">Sobre</a>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection('servicos')}
-                  className="text-gray-400 hover:text-teal-400 transition-colors"
-                >
-                  Serviços
-                </button>
+                 <a href="#servicos" className="text-gray-400 hover:text-teal-400 transition-colors">Serviços</a>    
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection('depoimentos')}
-                  className="text-gray-400 hover:text-teal-400 transition-colors"
-                >
-                  Depoimentos
-                </button>
+            <a href="#contato" className="text-gray-400 hover:text-teal-400 transition-colors">Contato</a>
               </li>
             </ul>
           </div>
@@ -135,7 +116,7 @@ export function Footer() {
             <p className="text-gray-400 text-sm">
               © {currentYear} Valmiro Filho, todos os direitos reservados. Desenvolvido por Rafael Andrade.
             </p>
-           
+
           </div>
         </div>
       </div>
