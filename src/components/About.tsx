@@ -56,7 +56,7 @@ export function About() {
           </div>
         </div>
       </div>
-      <div className='flex justify-center pt-6 lg:pt-12'>
+      <div className="flex justify-center pt-6 ultrawide:pt-12">
         <button className=" w-xl bg-teal-600 text-white lg:px-6 lg:py-3 px-2 py-2 rounded-full text-base lg:text-lg ultrawide:text-base font-medium
              hover:bg-teal-700 transition-colors group inline-flex items-center justify-center gap-2 ">
           Conheça nossas áreas de atuação <span className="transition-transform duration-300 group-hover:translate-x-1">
