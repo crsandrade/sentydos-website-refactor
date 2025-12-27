@@ -8,17 +8,17 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 export function Hero() {
 
   return (
-    <section id="inicio" className="pt-4 lg:pt-20 ultrawide:py-32 bg-linear-to-br from-teal-50 to-blue-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 ultrawide:py-36 ultrawide:mb-16">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+    <section id="inicio" className="pt-0 lg:pt-20 ultrawide:py-32 bg-linear-to-br from-teal-50 to-blue-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-32 ultrawide:py-36 ultrawide:mb-16">
+        <div className="grid md:grid-cols-2 gap-4 lg:gap-12 items-center">
           <div>
-            <h1 className=" text-4xl ultrawide:text-7xl lg:text-5xl text-gray-900 mb-6">
+            <h1 className="text-xl ultrawide:text-7xl lg:text-5xl md:text-4xl text-gray-900 lg:mb-6 mb-2">
               Psicólogo clínico para avaliação e cuidado da saúde mental
             </h1>
-            <p className="text-base ultrawide:text-xl text-gray-600 mb-8">
+            <p className="text-base ultrawide:text-xl text-gray-600 lg:mb-8 mb-2">
               Atendimento psicológico focado em compreender a origem dos <span className="text-teal-600">sintomas emocionais, cognitivos e comportamentais</span>, com acolhimento e método clínico.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-2">
               <a
                 href="https://wa.me/5571988911911?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta"
                 target="_blank"
