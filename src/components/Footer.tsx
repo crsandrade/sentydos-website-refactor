@@ -62,16 +62,16 @@ export function Footer() {
             <h4 className="mb-4">Links Rápidos</h4>
             <ul className="space-y-2">
               <li>
-            <a href="#inicio" className="text-gray-400 hover:text-teal-400 transition-colors ">Início</a>           
+                <a href="#inicio" className="text-gray-400 hover:text-teal-400 transition-colors ">Início</a>
               </li>
               <li>
-  <a href="#sobre" className="text-gray-400 hover:text-teal-400 transition-colors">Sobre</a>
+                <a href="#sobre" className="text-gray-400 hover:text-teal-400 transition-colors">Sobre</a>
               </li>
               <li>
-                 <a href="#servicos" className="text-gray-400 hover:text-teal-400 transition-colors">Serviços</a>    
+                <a href="#servicos" className="text-gray-400 hover:text-teal-400 transition-colors">Serviços</a>
               </li>
               <li>
-            <a href="#contato" className="text-gray-400 hover:text-teal-400 transition-colors">Contato</a>
+                <a href="#contato" className="text-gray-400 hover:text-teal-400 transition-colors">Contato</a>
               </li>
             </ul>
           </div>

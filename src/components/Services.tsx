@@ -1,4 +1,5 @@
 import { Brain, Heart, User, Clock } from 'lucide-react';
+import Link from 'next/link';
 
 interface Service {
   icon: React.ReactNode;
@@ -35,14 +36,14 @@ export function Services() {
     },
     {
       icon: <Clock className="w-12 h-12" />,
-      title: 'Sessões Online',
+      title: 'Sessão Online',
       description: 'Atendimento por videochamada com a mesma qualidade do presencial.',
       topics: ['Flexibilidade', 'Conforto', 'Acessibilidade', 'Segurança'],
     },
   ];
 
   return (
-    <section id="servicos" className="py-6 lg:py-20 ultrawide:py-36 bg-gray-50 ultrawide:mb-16">
+    <section id="servicos" className="pt-14 py-6 lg:py-20 ultrawide:py-36 bg-gray-50 ultrawide:mb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl ultrawide:text-6xl text-gray-900 mb-4">
@@ -76,9 +77,12 @@ export function Services() {
                 
               </div>
               <div className="mt-auto self-center pt-4">
-                  <button className="bg-teal-600 text-white px-4 py-2 rounded-full text-sm hover:bg-teal-700 transition-colors self-start">
+                  <a href={`https://wa.me/5571988911911?text=Olá!%20Gostaria%20de%20agendar%20uma%20${service.title}`} 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-teal-600 text-white px-4 py-2 rounded-full text-sm hover:bg-teal-700 transition-colors self-start">
                     Saiba mais
-                  </button>
+                  </a>
                 </div>
             </div>
           ))}

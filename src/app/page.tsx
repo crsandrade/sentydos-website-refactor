@@ -8,6 +8,7 @@ import { Testimonials } from "@/components/Testimonials";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import {useEffect } from "react";
+import dynamic from 'next/dynamic'
 
 /**
  * Componente da página inicial (Home).
@@ -20,6 +21,8 @@ export default function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const Contact = dynamic(() => import('@/components/Contact').then (m=> m.Contact), { ssr: false })
   return (
     <div className="min-h-screen bg-white">
       <Header />

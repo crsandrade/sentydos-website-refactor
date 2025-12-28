@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { useSearchParams } from 'next/navigation';
 
 /**
  * Componente da seção de Contato.
@@ -71,7 +72,7 @@ export function Contact() {
   ];
 
   return (
-    <section id="contato" className="py-6 lg:py-20 ultrawide:py-36 bg-gray-50 ultrawide:mb-16">
+    <section id="contato" className="pt-14 py-6 lg:py-20 ultrawide:py-36 bg-gray-50 ultrawide:mb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 ultrawide:mb-32">
           <h2 className="text-3xl md:text-4xl lg:text-5xl ultrawide:text-6xl text-gray-900 mb-4 ultrawide:mb-6">
@@ -129,6 +130,7 @@ export function Contact() {
                   Nome Completo *
                 </label>
                 <input
+                  suppressHydrationWarning={true}
                   type="text"
                   id="name"
                   name="name"
@@ -145,6 +147,7 @@ export function Contact() {
                   Email *
                 </label>
                 <input
+                  suppressHydrationWarning={true}
                   type="email"
                   id="email"
                   name="email"

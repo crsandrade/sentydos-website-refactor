@@ -18,7 +18,7 @@ export function About() {
   ];
 
   return (
-    <section id="sobre" className="py-4 lg:py-20 ultrawide:py-36 bg-white ultrawide:mb-16">
+    <section id="sobre" className="pt-14 py-4 lg:py-20 ultrawide:py-36 bg-white ultrawide:mb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:gap-16 gap-2 items-center">
           <div className="order-2 md:order-1">
@@ -57,12 +57,12 @@ export function About() {
         </div>
       </div>
       <div className="flex justify-center pt-6 ultrawide:pt-12">
-        <button className=" w-xl bg-teal-600 text-white lg:px-6 lg:py-3 px-2 py-2 rounded-full text-base lg:text-lg ultrawide:text-base font-medium
+        <a href="#servicos" className="w-xl bg-teal-600 text-white lg:px-6 lg:py-3 px-2 py-2 rounded-full text-base lg:text-lg ultrawide:text-base font-medium
              hover:bg-teal-700 transition-colors group inline-flex items-center justify-center gap-2 ">
           Conheça nossas áreas de atuação <span className="transition-transform duration-300 group-hover:translate-x-1">
             →
           </span>
-        </button>
+        </a>
       </div>
     </section>
   );
