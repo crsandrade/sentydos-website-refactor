@@ -47,7 +47,7 @@ export function Header() {
               rel="noopener noreferrer"
             >
               <button
-                className="bg-teal-600 text-white px-6 py-2 rounded-full hover:bg-teal-700 transition-colors"
+                className="bg-teal-600 text-white px-6 py-1 rounded-full hover:bg-teal-700 transition-colors"
               >
                 Agendar Consulta
               </button>
