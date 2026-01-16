@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Psicólogo Valmiro Filho | Saúde Mental e Bem-estar",
-  description: "Psicólogo clínico especializado em avaliação Neuropsicológica e psicoterapia. Agende sua consulta em Salvador/BA.",
+  title: "Psicólogo Valmiro Filho | Atendimento em Salvador, ou Online",
+  description: "Psicólogo clínico em Salvador - Bahia especializado em avaliação Neuropsicológica e psicoterapia. Agende sua consulta online ou presencial.",
 };
 
 /**
